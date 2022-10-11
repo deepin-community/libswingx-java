@@ -1,0 +1,4 @@
+version=3
+http://java.net/downloads/swingx/releases/([\d.]+)/ \
+  swingx-([\d.]+)-sources.zip \
+  debian debian/orig-tar.sh

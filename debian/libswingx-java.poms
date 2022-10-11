@@ -1,0 +1,3 @@
+pom.xml --no-parent
+swingx-core/pom.xml
+swingx-beaninfo/pom.xml

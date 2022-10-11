@@ -1,0 +1,64 @@
+Source: libswingx-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Varun Hiremath <varun@debian.org>,
+ Torsten Werner <twerner@debian.org>
+Build-Depends:
+ debhelper (>= 11),
+ default-jdk,
+ default-jdk-doc,
+ libjhlabs-filters-java,
+ libmaven-javadoc-plugin-java,
+ maven-debian-helper (>= 1.4)
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/java-team/libswingx-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libswingx-java
+Homepage: https://swingx.java.net
+
+Package: libswingx-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libswingx-java-doc
+Description: extensions to the Swing GUI toolkit
+ This package contains extensions to the Swing GUI toolkit, including new and
+ enhanced components that provide functionality commonly required by rich
+ client applications. Highlights include:
+  - Sorting, filtering, highlighting for tables, trees, and lists
+  - Find/search
+  - Auto-completion
+  - Login/authentication framework
+  - TreeTable component
+  - Collapsible panel component
+  - Date picker component
+  - Tip-of-the-Day component
+ .
+ Many of these features will eventually be incorporated into the Swing toolkit,
+ although API compatibility will not be guaranteed. The SwingX project focuses
+ exclusively on the raw components themselves.
+
+Package: libswingx-java-doc
+Architecture: all
+Section: doc
+Depends: ${maven:DocDepends}, ${misc:Depends}
+Recommends: ${maven:DocOptionalDepends}
+Description: extensions to the Swing GUI toolkit - documentation
+ This package contains extensions to the Swing GUI toolkit, including new and
+ enhanced components that provide functionality commonly required by rich
+ client applications. Highlights include:
+  - Sorting, filtering, highlighting for tables, trees, and lists
+  - Find/search
+  - Auto-completion
+  - Login/authentication framework
+  - TreeTable component
+  - Collapsible panel component
+  - Date picker component
+  - Tip-of-the-Day component
+ .
+ Many of these features will eventually be incorporated into the Swing toolkit,
+ although API compatibility will not be guaranteed. The SwingX project focuses
+ exclusively on the raw components themselves.
+ .
+ This package contains API documentation (Javadoc) of SwingX GUI Toolkit.

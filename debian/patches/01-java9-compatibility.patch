@@ -1,0 +1,21 @@
+Description: Fixes the compatibility issues with Java 9
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/swingx-core/src/main/java/org/jdesktop/swingx/JXTable.java
++++ b/swingx-core/src/main/java/org/jdesktop/swingx/JXTable.java
+@@ -561,7 +561,7 @@
+      * @param columnNames Column names, as a Vector of Strings.
+      */
+     public JXTable(Vector<?> rowData, Vector<?> columnNames) {
+-        super(rowData, columnNames);
++        super((Vector) rowData, columnNames);
+         init();
+     }
+ 
+@@ -4551,4 +4551,4 @@
+         repaint();
+     }
+ 
+-}
+\ No newline at end of file
++}

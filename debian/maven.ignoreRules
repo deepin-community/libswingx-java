@@ -1,0 +1,4 @@
+junit junit * * * *
+net.sf.jmd maven-crap4j-plugin * * * *
+org.apache.maven.plugins maven-surefire-plugin * * * *
+org.codehaus.mojo emma-maven-plugin * * * *

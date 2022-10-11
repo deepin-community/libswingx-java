@@ -1,0 +1,9 @@
+Document: libswingx-java-doc
+Title: API Javadoc for SwingX
+Author: SwingX developers
+Abstract: This is the API Javadoc provided by the SwingX library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libswingx-java/api/index.html
+Files: /usr/share/doc/libswingx-java/api/*

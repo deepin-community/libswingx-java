@@ -1,0 +1,6 @@
+commons-collections commons-collections jar s/3\..*/3.x/ * *
+junit junit jar s/3\..*/3.x/ * *
+jmock jmock jar s/.*/1.x/ * *
+org.swinglabs swingx-beaninfo jar s/1\..*/1.x/ * *
+org.swinglabs swingx-core jar s/1\..*/1.x/ * *
+org.swinglabs swingx-project pom s/1\..*/1.x/ * *
